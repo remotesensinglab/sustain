@@ -2,6 +2,7 @@ import streamlit as st
 import pyrebase
 import os
 from streamlit import session_state as sess
+load_dotenv(".env")
 
 # Load the Firebase configuration from Streamlit secrets
 
