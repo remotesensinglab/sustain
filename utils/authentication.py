@@ -6,16 +6,15 @@ from streamlit import session_state as sess
 # Load the Firebase configuration from Streamlit secrets
 
 FBASE_CONFIG = {
-  'apiKey': "AIzaSyC1OhyH75cLVbtxvUdArVdtzABH6F6GuAY",
-  'authDomain': "sustain-cfda2.firebaseapp.com",
-  'databaseURL': "https://sustain-cfda2-default-rtdb.firebaseio.com/",
-  'projectId': "sustain-cfda2",
-  'storageBucket': "sustain-cfda2.appspot.com",
-  'messagingSenderId': "667559431179",
-  'appId': "1:667559431179:web:b8e02b7c302c560ecd4b0e",
-  'measurementId': "G-PJ2B2JQTD3"
+    'apiKey': os.getenv("FBASE_API_KEY"),
+    'authDomain': os.getenv("FBASE_AUTH_DOMAIN"),
+    'projectId': os.getenv("FBASE_PROJECT_ID"),
+    'storageBucket': os.getenv("FBASE_STORAGE_BUCKET"),
+    'messagingSenderId': os.getenv("FBASE_MESSAGING_SENDER_ID"),
+    'appId': os.getenv("FBASE_APP_ID"),
+    'measurementId': os.getenv("FBASE_MEASUREMENT_ID"),
+    'databaseURL': os.getenv("FBASE_DATABASE_URL")
 }
-
 # Optionally, display some Firebase configuration info using Streamlit
 # st.write("Firebase Project ID:", FBASE_CONFIG['projectId'])
 # st.write("Firebase App ID:", FBASE_CONFIG['appId'])
