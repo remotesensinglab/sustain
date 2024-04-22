@@ -1,7 +1,7 @@
 # SustaiN
 
 This is an app that can show N-status for Corn and Sorghum based on Satellite Remote Sensing.
-https://sustain-app-twpetauroxftmkklm4qunx.streamlit.app/
+https://outlook.office.com/mail/safelink.html?url=https://sustain-8e29de7e8149.herokuapp.com/&corid=da4a65a2-38df-bd35-0207-375d4be16ae3
 ## Updates and Enhancements
 
 ### New API Keys
